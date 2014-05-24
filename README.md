@@ -2,7 +2,7 @@ jhu-getdata-003
 ===============
 
 ## Getting and Cleaning Data - Course Project
-James Eisenhauer
+###James Eisenhauer
 Coursera.org  John Hopkins University
 
 In this project we utlize the Human Activity Recognition Using Smartphones Data Set.
