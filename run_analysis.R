@@ -1,3 +1,7 @@
+# add needed library
+library(reshape)
+library(reshape2)
+
 
 # read in raw data
 activity_labels <- read.table("./data/RawData/activity_labels.txt")
@@ -54,8 +58,15 @@ colnames(mergedData) <- gsub("\\(", "", colnames(mergedData))
 # remove ) from all column names
 colnames(mergedData) <- gsub("\\)", "", colnames(mergedData))
 
-# write tidied data to file
-tidyData <- mergedData
-write.table(tidyData, "./data/TidyData/tidydata.txt")
+# write tidied raw data to file
+write.table(mergedData, "./data/TidyData/tidydata.txt")
+
+# determine means
+meanData <-melt(mergedData, id=c("subject", "activity"))
+meanTidyData<-dcast(meanData, subject + activity ~ variable, fun.aggregate=mean)
+
+
+# write meanTidyData to file
+write.table(mergedData, "./data/TidyData/meantidydata.txt")
 
 
