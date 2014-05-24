@@ -25,7 +25,7 @@ To create the data I utlized the below data files from the raw data.
 - data/RawData/test/subject_test.txt
 
 I then replace the numbered activities with the names and add the actual measurement names to the colums of data.
-I then reduce the colums to only contain measurements that relate to mean or standard deviation.  Then the test and train data get bound together to make a single data set.
+I then reduce the colums to only contain measurements that relate to mean or standard deviation.  Then the test and train data get bound together to make a single data set.  Once this is complete all the column names get cleaned of special and upper case characters.
 
 In this repository you will find a R script that was developed to obtain the data and produce tidy data.
 You will also find the CodeBook that will describe the steps taken to tidy the data as well as the description of this data.
