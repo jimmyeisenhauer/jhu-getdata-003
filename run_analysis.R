@@ -67,6 +67,6 @@ meanTidyData<-dcast(meanData, subject + activity ~ variable, fun.aggregate=mean)
 
 
 # write meanTidyData to file
-write.table(mergedData, "./data/TidyData/meantidydata.txt")
+write.table(meanTidyData, "./data/TidyData/meantidydata.txt")
 
 
