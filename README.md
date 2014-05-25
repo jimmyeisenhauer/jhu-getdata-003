@@ -29,6 +29,5 @@ To create the data I utlized the below data files from the raw data.
 - data/RawData/test/subject_test.txt
 
 I then replace the numbered activities with the names and add the actual measurement names to the colums of data.
-I then reduce the colums to only contain measurements that relate to mean or standard deviation.  Then the test and train data get bound together to make a single data set.  Once this is complete all the column names get cleaned of special and upper case characters.
-
+I then reduce the colums to only contain measurements that relate to mean or standard deviation.  Then the test and train data get bound together to make a single data set.  Once this is complete all the column names get cleaned of special and upper case characters.  Final transformation finds average of each variable for each activity and each subject and stores it in data/TidyData/meantidydata.txt
 
