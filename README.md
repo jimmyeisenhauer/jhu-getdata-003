@@ -9,7 +9,7 @@ In this project we utlize the Human Activity Recognition Using Smartphones Data 
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
 In this repository you will find a R script that was developed to obtain the data and produce tidy data.
-You will also find the CodeBook that will describe the steps taken to tidy the data as well as the description of this data.
+You will also find the CodeBook that will describe this data.
 
 
 The actual raw data set came from this zip file.
